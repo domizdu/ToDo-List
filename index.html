@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:ital,wght@1,100;1,200&display=swap" rel="stylesheet" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<h1>To - Do list</h1>
+
+<h2 class="description">Create and manage your task list.</h2>
+
+<div class="addTaskSection">
+    <input id="taskInput" type="text" placeholder="Place your task here">
+    <input id="priorityInput" type="text" placeholder="Priority 1 - 10">
+    <button id="addTaskButton">Add task</button>
+</div>
+
+<p id="tasksToFinish">Tasks to finish: <span id="counter"></span></p>
+
+<ul id="taskList">
+</ul>
+
+<button id="removeFinishedTasksButton">Remove finished tasks</button>
+</div>
+
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

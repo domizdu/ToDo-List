@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body  {
+    width: 700px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.container {
+    background: rgb(241,250,238);
+    background: linear-gradient(90deg, rgba(241,250,238,1) 38%, rgba(168,218,220,1) 100%);
+    border-radius: 20px;
+}
+h1 {
+    line-height: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: #457B9D;
+    border-bottom: 2px double #457B9D;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.description {
+    font-size: 1em;
+    margin: 20px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+.addTaskSection {
+    height: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#taskInput {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+    padding: 5px 0 5px 10px;
+}
+#priorityInput {
+    width: 100px;
+    border-radius: 2px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+.errorMsg {
+    font-size: 0.8em;
+    padding: 20px 0;
+    text-align: center;
+    color: #E63946;
+}
+
+
+#tasksToFinish {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+#taskList {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 40px;
+}
+.done {
+    color: #A8DADC;
+}
+#taskList li {
+    margin-bottom: 20px;
+}
+#taskList h3 {
+    padding: 10px 0;
+}
+#taskList p {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+
+#addTaskButton,
+.deleteButton,
+.completeButton,
+#removeFinishedTasksButton {
+    background: #1D3557;
+    border: 2px solid #1D3557;
+    color: #fff;
+    cursor: pointer;
+}
+#addTaskButton {
+    border-left: 2px solid #fff;
+    border-radius: 0 10px 10px 0;
+    padding: 0 10px;
+}
+.deleteButton {
+    border-radius: 10px 0 0 10px;
+    padding: 3px 8px;
+    font-size: 0.8em;
+}
+.completeButton {
+    border-left: 2px solid #fff;
+    border-radius: 0 10px 10px 0;
+    padding: 3px 8px;
+    font-size: 0.8em;
+}
+#removeFinishedTasksButton {
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    #addTaskButton:hover,
+    .deleteButton:hover,
+    .completeButton:hover,
+    #removeFinishedTasksButton:hover {
+        background: #fff;
+        border: 2px solid #1D3557;
+        color: #1D3557;
+        transition: 0.2s;
+    }
+    #addTaskButton:active,
+    .deleteButton:active,
+    .completeButton:active,
+    #removeFinishedTasksButton:active {
+        box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    }
